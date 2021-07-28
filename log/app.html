@@ -1,0 +1,1163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 09:37:13 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 09:37:13 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2021-07-28 09:37:13,998</td>
+<td class="Thread">restartedMain</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.capgemini.training.app.SpringDataJpaAppApplication</td>
+<td class="Message">Starting SpringDataJpaAppApplication on WSAMZN-VK2ECG0C with PID 4920 (D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app\target\classes started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 09:37:14,012</td>
+<td class="Thread">restartedMain</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.capgemini.training.app.SpringDataJpaAppApplication</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 09:37:22,280</td>
+<td class="Thread">restartedMain</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 09:37:23,672</td>
+<td class="Thread">restartedMain</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.capgemini.training.app.SpringDataJpaAppApplication</td>
+<td class="Message">Started SpringDataJpaAppApplication in 10.322 seconds (JVM running for 11.399)</td>
+</tr>
+
+<tr class="error even">
+<td class="Date">2021-07-28 09:38:04,062</td>
+<td class="Thread">http-nio-8081-exec-1</td>
+<td class="Level">ERROR</td>
+<td class="Logger">com.capgemini.training.controller.EmployeeRestController</td>
+<td class="Message">No employees in the database</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.capgemini.training.exception.EmployeeException: No employees in the database
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl.getAllEmployees(EmployeeServiceImpl.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl$$FastClassBySpringCGLIB$$9804b80e.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$65b4708.getAllEmployees(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.controller.EmployeeRestController.getAllEmployees(EmployeeRestController.java:72)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.Thread.run(Thread.java:831)
+</td></tr><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:06:20 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:06:22 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:06:23,032</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 1092 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:06:23,044</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:06:29,060</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:06:31,773</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Started EmployeeControllerIntegrationTest in 9.075 seconds (JVM running for 12.791)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:06:32,173</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeRestControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 1092 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:06:32,177</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:06:33,639</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:06:34,107</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Started EmployeeRestControllerIntegrationTest in 1.962 seconds (JVM running for 15.126)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:06:34,416</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Starting EmployeeRepositoryIntegrationTest on WSAMZN-VK2ECG0C with PID 1092 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:06:34,420</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:06:35,771</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Started EmployeeRepositoryIntegrationTest in 1.39 seconds (JVM running for 16.789)</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:35:07 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:35:09 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:35:09,673</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 12924 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:35:09,678</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:35:15,755</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:35:18,477</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Started EmployeeControllerIntegrationTest in 9.162 seconds (JVM running for 13.163)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:35:18,827</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeRestControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 12924 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:35:18,831</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:35:20,289</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:35:20,815</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Started EmployeeRestControllerIntegrationTest in 2.017 seconds (JVM running for 15.501)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:35:21,141</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Starting EmployeeRepositoryIntegrationTest on WSAMZN-VK2ECG0C with PID 12924 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:35:21,145</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:35:22,068</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Started EmployeeRepositoryIntegrationTest in 0.958 seconds (JVM running for 16.754)</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:44:36 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:44:37 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:44:37,588</td>
+<td class="Thread">restartedMain</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.capgemini.training.app.SpringDataJpaAppApplication</td>
+<td class="Message">Starting SpringDataJpaAppApplication on WSAMZN-VK2ECG0C with PID 8380 (D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app\target\classes started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:44:37,614</td>
+<td class="Thread">restartedMain</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.capgemini.training.app.SpringDataJpaAppApplication</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:44:44,667</td>
+<td class="Thread">restartedMain</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="error odd">
+<td class="Date">2021-07-28 13:44:45,880</td>
+<td class="Thread">http-nio-8081-exec-3</td>
+<td class="Level">ERROR</td>
+<td class="Logger">com.capgemini.training.controller.EmployeeRestController</td>
+<td class="Message">No employees in the database</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.capgemini.training.exception.EmployeeException: No employees in the database
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl.getAllEmployees(EmployeeServiceImpl.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl$$FastClassBySpringCGLIB$$9804b80e.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$843e973e.getAllEmployees(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.controller.EmployeeRestController.getAllEmployees(EmployeeRestController.java:72)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.Thread.run(Thread.java:831)
+</td></tr>
+<tr class="info even">
+<td class="Date">2021-07-28 13:44:46,059</td>
+<td class="Thread">restartedMain</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.capgemini.training.app.SpringDataJpaAppApplication</td>
+<td class="Message">Started SpringDataJpaAppApplication in 8.958 seconds (JVM running for 9.918)</td>
+</tr>
+
+<tr class="error odd">
+<td class="Date">2021-07-28 13:45:17,055</td>
+<td class="Thread">http-nio-8081-exec-7</td>
+<td class="Level">ERROR</td>
+<td class="Logger">com.capgemini.training.controller.EmployeeRestController</td>
+<td class="Message">No employees in the database</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.capgemini.training.exception.EmployeeException: No employees in the database
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl.getAllEmployees(EmployeeServiceImpl.java:58)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl$$FastClassBySpringCGLIB$$9804b80e.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:118)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.service.EmployeeServiceImpl$$EnhancerBySpringCGLIB$$843e973e.getAllEmployees(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.capgemini.training.controller.EmployeeRestController.getAllEmployees(EmployeeRestController.java:72)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.Thread.run(Thread.java:831)
+</td></tr><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:51:03 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:51:05 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:51:05,875</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 12736 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:51:05,879</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:51:11,765</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:51:14,236</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Started EmployeeControllerIntegrationTest in 8.628 seconds (JVM running for 12.116)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:51:14,599</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeRestControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 12736 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:51:14,604</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:51:16,116</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:51:16,622</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Started EmployeeRestControllerIntegrationTest in 2.06 seconds (JVM running for 14.502)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:51:16,904</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Starting EmployeeRepositoryIntegrationTest on WSAMZN-VK2ECG0C with PID 12736 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:51:16,937</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:51:17,876</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Started EmployeeRepositoryIntegrationTest in 1.0 seconds (JVM running for 15.756)</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:54:52 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:54:54 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:54:54,898</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 13456 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:54:54,910</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:55:00,964</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:55:03,620</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Started EmployeeControllerIntegrationTest in 9.103 seconds (JVM running for 12.224)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:55:04,005</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeRestControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 13456 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:55:04,011</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:55:05,564</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:55:06,064</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Started EmployeeRestControllerIntegrationTest in 2.091 seconds (JVM running for 14.668)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:55:06,367</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Starting EmployeeRepositoryIntegrationTest on WSAMZN-VK2ECG0C with PID 13456 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:55:06,368</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:55:07,330</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Started EmployeeRepositoryIntegrationTest in 1.0 seconds (JVM running for 15.934)</td>
+</tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:56:18 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Wed Jul 28 13:56:20 IST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:56:20,995</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 13752 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:56:21,011</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:56:27,017</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:56:29,478</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeControllerIntegrationTest</td>
+<td class="Message">Started EmployeeControllerIntegrationTest in 8.946 seconds (JVM running for 12.001)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:56:29,915</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Starting EmployeeRestControllerIntegrationTest on WSAMZN-VK2ECG0C with PID 13752 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:56:29,920</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2021-07-28 13:56:31,540</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration</td>
+<td class="Message">spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:56:32,093</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.controller.EmployeeRestControllerIntegrationTest</td>
+<td class="Message">Started EmployeeRestControllerIntegrationTest in 2.21 seconds (JVM running for 14.616)</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:56:32,410</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Starting EmployeeRepositoryIntegrationTest on WSAMZN-VK2ECG0C with PID 13752 (started by malsingh1 in D:\Users\malsingh1\Documents\PS_Training\asde_batch9_ws\spring-data-jpa-app)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2021-07-28 13:56:32,411</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">No active profile set, falling back to default profiles: default</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2021-07-28 13:56:33,488</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">com.sapient.repo.EmployeeRepositoryIntegrationTest</td>
+<td class="Message">Started EmployeeRepositoryIntegrationTest in 1.123 seconds (JVM running for 16.011)</td>
+</tr>

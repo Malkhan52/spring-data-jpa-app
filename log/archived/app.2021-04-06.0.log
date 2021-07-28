@@ -1,0 +1,61 @@
+2021-04-06 09:17:01,093 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15h5m45s946ms416µs900ns).
+2021-04-06 16:37:24,119 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 16:37:24,163 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-04-06 16:37:24,182 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-04-06 16:37:25,197 INFO com.capgemini.training.app.SpringDataJpaAppApplication [restartedMain] Starting SpringDataJpaAppApplication on DESKTOP-B8FF4R1 with PID 24928 (F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app\target\classes started by Admin in F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app)
+2021-04-06 16:37:25,198 INFO com.capgemini.training.app.SpringDataJpaAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-06 16:37:26,324 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 16:37:26,337 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 12ms. Found 1 JPA repository interfaces.
+2021-04-06 16:37:26,857 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-04-06 16:37:26,858 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-04-06 16:37:26,859 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-04-06 16:37:26,859 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-04-06 16:37:26,859 INFO org.apache.catalina.core.AprLifecycleListener [restartedMain] Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-06 16:37:26,860 INFO org.apache.catalina.core.AprLifecycleListener [restartedMain] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-06 16:37:26,860 INFO org.apache.catalina.core.AprLifecycleListener [restartedMain] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-06 16:37:26,861 INFO org.apache.catalina.core.AprLifecycleListener [restartedMain] OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-06 16:37:26,901 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-06 16:37:26,901 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1695 ms
+2021-04-06 16:37:27,099 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 16:37:27,109 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-04-06 16:37:27,180 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-04-06 16:37:27,180 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-04-06 16:37:27,971 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 16:37:27,972 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 16:37:27,980 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-06 16:37:28,257 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-06 16:37:28,472 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-04-06 16:37:28,962 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-04-06 16:37:28,978 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-04-06 16:37:29,093 INFO com.capgemini.training.app.SpringDataJpaAppApplication [restartedMain] Started SpringDataJpaAppApplication in 4.032 seconds (JVM running for 107157.433)
+2021-04-06 16:37:29,098 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-04-06 16:37:36,013 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-14] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 16:37:36,015 INFO com.zaxxer.hikari.HikariDataSource [Thread-14] HikariPool-2 - Shutdown initiated...
+2021-04-06 16:37:36,026 INFO com.zaxxer.hikari.HikariDataSource [Thread-14] HikariPool-2 - Shutdown completed.
+2021-04-06 16:37:36,301 INFO com.capgemini.training.app.SpringDataJpaAppApplication [restartedMain] Starting SpringDataJpaAppApplication on DESKTOP-B8FF4R1 with PID 24928 (F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app\target\classes started by Admin in F:\Corporate Training\KLS\Spring 5\Spring Data\spring-data-jpa-app)
+2021-04-06 16:37:36,302 INFO com.capgemini.training.app.SpringDataJpaAppApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-06 16:37:36,949 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-06 16:37:36,963 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 12ms. Found 1 JPA repository interfaces.
+2021-04-06 16:37:37,464 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-04-06 16:37:37,465 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-04-06 16:37:37,466 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-04-06 16:37:37,466 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-04-06 16:37:37,466 INFO org.apache.catalina.core.AprLifecycleListener [restartedMain] Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-04-06 16:37:37,467 INFO org.apache.catalina.core.AprLifecycleListener [restartedMain] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-06 16:37:37,467 INFO org.apache.catalina.core.AprLifecycleListener [restartedMain] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-06 16:37:37,467 INFO org.apache.catalina.core.AprLifecycleListener [restartedMain] OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-04-06 16:37:37,506 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-06 16:37:37,506 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1195 ms
+2021-04-06 16:37:37,683 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-06 16:37:37,691 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-04-06 16:37:37,763 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-04-06 16:37:37,763 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-04-06 16:37:38,281 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-06 16:37:38,281 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-06 16:37:38,295 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-06 16:37:38,584 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-06 16:37:38,767 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-04-06 16:37:39,031 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-04-06 16:37:39,037 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-04-06 16:37:39,133 INFO com.capgemini.training.app.SpringDataJpaAppApplication [restartedMain] Started SpringDataJpaAppApplication in 2.889 seconds (JVM running for 107167.473)
+2021-04-06 16:37:39,136 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
